@@ -1,0 +1,14 @@
+{% extends 'cacke/base.html' %}
+
+
+{% block content %}
+    {% for cac in cacke %}
+        <div class="cacke">
+            
+            <h1><a href="">{{ cac.name }}</a></h1>
+            <p>Начинка: {{ cac.nachinka|linebreaksbr }}</p>
+            <p>Описание: {{ cac.text_ops|linebreaksbr }}</p>
+            
+        </div>
+    {% endfor %}
+{% endblock %}

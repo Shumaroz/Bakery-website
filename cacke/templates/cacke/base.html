@@ -1,0 +1,39 @@
+{% load static %}
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Главная</title>
+        <link rel="stylesheet" href="{% static 'css/cacke.css' %}">
+    </head>
+
+    <body>
+        <div class="page-header">
+            <h1><a href="">Bulka</a></h1>
+            
+        </div>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="Submit" name="submit" value="Submit"/>
+            </form>
+            
+            {% if submitbutton == "Submit" %}
+            <h1>Your first name is {{ search_string }}</h1>
+            {% endif %}
+        <p style="text-align: center"><button>Кнопка с текстом</button></p>
+
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+
+
+
+</html>

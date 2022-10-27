@@ -9,12 +9,13 @@ def cacke_list (request):
     cackes = Bulka.objects.all()
     form = SearchForm()
     if request.method == "POST":
-        form = SearchForm(request.POST)
+        form = SearchForm(request.POST) 
+        
+        print("Anything work? Here")
         if form.is_valid():
-            stringe = form.cleaned_data.get("search_string")
+            print("Anything work?")
+            stringe = form.nachinka
             cackes = Bulka.objects.filter(nachinka__icontains = stringe)
-        else:
-            cackes = Bulka.objects.all()
         
     else:
         cackes = Bulka.objects.all()        

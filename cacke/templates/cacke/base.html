@@ -13,17 +13,12 @@
         </div>
         <form action="" method="POST">
             {% csrf_token %}
-            {{ form.as_p }}
+            {{ form.nachinka }}
             <input type="Submit" name="submit" value="Submit"/>
-            </form>
-            
-            {% if submitbutton == "Submit" %}
-            <h1>Your first name is {{ search_string }}</h1>
-            {% endif %}
-        <p style="text-align: center"><button>Кнопка с текстом</button></p>
-
+        </form>
+        
         <div class="content container">
-            <div class="row">
+            <div class="row2">
                 <div class="col-md-8">
                 {% block content %}
                 {% endblock %}

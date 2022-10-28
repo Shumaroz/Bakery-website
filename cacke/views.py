@@ -11,8 +11,6 @@ def cacke_list (request):
     if request.method == "GET":
         form = SearchForm(request.GET) 
         
-        print("Anything work? Here")
-        print("Anything work?")
         stringe = form.get_nach()
         cackes = Bulka.objects.filter(nachinka__icontains = stringe)
         

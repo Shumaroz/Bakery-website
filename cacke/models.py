@@ -1,3 +1,4 @@
+from email.policy import default
 from django.conf import settings
 from django.db import models
 
@@ -6,7 +7,9 @@ from django.db import models
 
 class Bulka(models.Model):
     name = models.TextField(primary_key = True)
-    nachinka = models.TextField()
+    nachinka = models.TextField(default = "simple")
+    testo = models.TextField(default = "simple")
+    price = models.IntegerField(default = "0")
     text_ops = models.TextField()
 
 

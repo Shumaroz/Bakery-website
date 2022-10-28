@@ -8,8 +8,8 @@ from .models import Bulka
 def cacke_list (request):
     cackes = Bulka.objects.all()
     form = SearchForm()
-    if request.method == "GET":
-        form = SearchForm(request.GET) 
+    if request.method == "POST":
+        form = SearchForm(request.POST) 
         
         stringe = form.get_nach()
         cackes = Bulka.objects.filter(nachinka__icontains = stringe)

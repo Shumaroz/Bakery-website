@@ -3,24 +3,31 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Главная</title>
+        <link rel="shortcut icon" href="{% static 'css/logo.png' %}" type="image/x-icon">
         <link rel="stylesheet" href="{% static 'css/cacke.css' %}">
     </head>
 
     <body>
         <div class="page-header">
-            <h1><a href="">Bulka</a></h1>
-            
+            <h3><img src="{% static 'css/logo.png' %}">Bakery</h3>
+           
         </div>
+        <h4>Текст про подбор хб изделий</h4>
         <form action="" method="POST">
             {% csrf_token %}
-           <p>начинка: {{ form.nachinka }} </p> 
-           <p>Тесто: {{ form.testo }} </p> 
-           <p>название: {{ form.name }} </p> 
-            
-            <input type="Submit" name="submit" value="Submit"/>
+            <p class="name">{{ form.name }}</p>
+            <p class="nach_n">Начинка </p>
+            <p class="nach">{{ form.nachinka }} </p>
+            <p class="testo_n">Тесто</p>
+            <p class="testo">{{ form.testo }} </p>  
+            <p class="pric">от {{ form.price_l }}  до {{ form.price_r }}</p>
+            <input class="but1" type="Submit" name="Submit" value="Применить"/>
         </form>
-        
-
+           <h2></h2>
+           <h2></h2>
+           <h2></h2>
+           
+        <h5>Предложения</h5>
         <div class="content container">
             <div class="row2">
                 <div class="col-md-8">

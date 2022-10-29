@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'gerlary.pythonanywhere.com',
-    '127.0.0.1'
+    "127.0.0.1"
     ]
 
 
@@ -71,7 +71,6 @@ TEMPLATES = [
         },
     },
 ]
-
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 

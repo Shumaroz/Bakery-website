@@ -27,7 +27,7 @@ h1{
     font-weight: 400;
     font-size: 14px;
     line-height: 139.69%;
-    /* identical to box height, or 20px */
+ 
 
     display: flex;
     align-items: center;
@@ -48,7 +48,7 @@ h4{
     font-weight: 500;
     font-size: 18px;
     line-height: 139.69%;
-    /* or 25px */
+
     color: #512600;
 }
 h2{
@@ -73,7 +73,6 @@ h5{
     font-weight: 500;
     font-size: 30px;
     line-height: 139.69%;
-    /* or 25px */
 
 
     color: #512600;
@@ -142,7 +141,7 @@ p.nach_n{
     font-weight: 400;
     font-size: 12px;
     line-height: 139.69%;
-    /* identical to box height, or 17px */
+
     position: absolute;
     left: 16px;
     top: 55px;
@@ -158,7 +157,7 @@ p.testo_n{
     font-weight: 400;
     font-size: 12px;
     line-height: 139.69%;
-    /* identical to box height, or 17px */
+
     position: absolute;
     left: 120px;
     top: 55px;

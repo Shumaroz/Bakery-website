@@ -9,7 +9,7 @@ class Bulka(models.Model):
     name = models.TextField(primary_key = True)
     nachinka = models.TextField(default = "simple")
     testo = models.TextField(default = "simple")
-    price = models.IntegerField(default = "0")
+    price = models.IntegerField(default = 0)
     text_ops = models.TextField()
 
 

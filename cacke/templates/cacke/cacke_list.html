@@ -1,5 +1,5 @@
 {% extends 'cacke/base.html' %}
-
+{% load static %}
 
 {% block content %}
     {% for cac in cacke %}
@@ -10,7 +10,7 @@
             <p>Тесто: {{ cac.testo|linebreaksbr }}</p>
             <p>Цена: {{ cac.price|linebreaksbr }}</p>
             <p>Описание: {{ cac.text_ops|linebreaksbr }}</p>
-            
+            <img src= "{{ cac.imgs.url }}" >
         </div>
     {% endfor %}
 {% endblock %}

@@ -14,7 +14,7 @@ html{
     }
 body{
     background: #FFF8EE;
-
+    padding: 10px;
 }
 
 
@@ -37,12 +37,10 @@ h1{
 
 }
 h4{
-    position: absolute;
     width: 256px;
-    height: 25px;
+    height: 25px;   
     left: 0px;
     top: 20px;
-
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -62,7 +60,7 @@ h2{
    
     }
 h5{
-    position: absolute;
+    
     width: 124px;
     height: 25px;
     left: 0px;
@@ -85,13 +83,8 @@ p.name{
     padding: 0px 7px;
     gap: 40px;
 
-    position: absolute;
-    width: 164px;
-    height: 30px;
-    left: 16px;
-    top: 20px;
 
-    background: #FFFFFF;
+    background: #FFF8EE;
     border-radius: 4px;
 }
 
@@ -103,11 +96,7 @@ input.but1{
     padding: 10px 7px;
     gap: 10px;
     
-    position: absolute;
-    width: 79px;
-    height: 30px;
-    left: 201px;
-    top: 37px;
+    
     color: #FFF8EE;
     background: #512600;
     border-radius: 4px;
@@ -115,7 +104,6 @@ input.but1{
 
 p.nach{
 
-    position: absolute;
     left: 16px;
     top: 70px;
     background: #FFFFFF;
@@ -123,7 +111,6 @@ p.nach{
 }
 p.testo{
 
-    position: absolute;
     left: 120px;
     top: 70px;
     
@@ -142,7 +129,6 @@ p.nach_n{
     font-size: 12px;
     line-height: 139.69%;
 
-    position: absolute;
     left: 16px;
     top: 55px;
 
@@ -157,23 +143,21 @@ p.testo_n{
     font-weight: 400;
     font-size: 12px;
     line-height: 139.69%;
-
-    position: absolute;
+    
     left: 120px;
     top: 55px;
-
     color: #512600;
 }
 p.pric{
-    position: absolute;
+    
     left: 223px;
     top: 70px;
-    background: #FFFFFF;
+    background: #FFF8EE;
     border-radius: 4px;
 
 }
 form{
-    position: absolute;
+    
     top:40px;
     border-radius: 4px;
     padding-right:100%;

@@ -15,18 +15,33 @@
         <h4>Текст про подбор хб изделий</h4>
         <form action="" method="POST">
             {% csrf_token %}
-            <p class="name">{{ form.name }}</p>
-            <p class="nach_n">Начинка </p>
-            <p class="nach">{{ form.nachinka }} </p>
-            <p class="testo_n">Тесто</p>
-            <p class="testo">{{ form.testo }} </p>  
-            <p class="pric">от {{ form.price_l }}  до {{ form.price_r }}</p>
-            <input class="but1" type="Submit" name="Submit" value="Применить"/>
-        </form>
-           <h2></h2>
-           <h2></h2>
-           <h2></h2>
+            <table>
+                <td ><p class="name">{{ form.name }}</p></td>
+                <td><input class="but1" type="Submit" name="Submit" value="Применить"/></td>
+                <td><input class="but1" type="Submit" name="Reset" value="Очистить"/></td>
+            </table>
+            <table>
+                <tr>
+                    <td ><p class="nach_n">Начинка </p></td>
+                    <td><p class="testo_n">Тесто</p></td>
+                    <td><p class="testo_n">Цена</p></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><p class="nach">{{ form.nachinka }} </p></td>
+                    <td><p class="testo">{{ form.testo }} </p>  </td>
+                    <td><p class="pric">от{{ form.price_l }}  </p></td>
+                    <td><p class="pric">до{{ form.price_r }}</p></td>
+                </tr>
+            </table>
+            
+            
+            
+            
+            
            
+        </form>
+                
         <h5>Предложения</h5>
         <div class="content container">
             <div class="row2">

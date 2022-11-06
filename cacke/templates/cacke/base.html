@@ -16,7 +16,7 @@
         <form action="" method="POST">
             {% csrf_token %}
             <table>
-                <td ><p class="name">{{ form.name }}</p></td>
+                <td class="whod"><p class="name">{{ form.name }}</p></td>
                 <td><input class="but1" type="Submit" name="Submit" value="Применить"/></td>
                 <td><input class="but1" type="Submit" name="Reset" value="Очистить"/></td>
             </table>
@@ -24,14 +24,14 @@
                 <tr>
                     <td ><p class="nach_n">Начинка </p></td>
                     <td><p class="testo_n">Тесто</p></td>
-                    <td><p class="testo_n">Цена</p></td>
+                    <td><p class="pric_n">Цена</p></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td><p class="nach">{{ form.nachinka }} </p></td>
-                    <td><p class="testo">{{ form.testo }} </p>  </td>
-                    <td><p class="pric">от{{ form.price_l }}  </p></td>
-                    <td><p class="pric">до{{ form.price_r }}</p></td>
+                    <td class="whod"><p class="nach">{{ form.nachinka }}</p></td>
+                    <td class="whod"><p class="testo">{{ form.testo }}</p></td>
+                    <td class="whodpric"><p class="pric">от {{ form.price_l }}</p></td>
+                    <td class="whodpric"> <p class="pric">до {{ form.price_r }}</p></td>
                 </tr>
             </table>
             

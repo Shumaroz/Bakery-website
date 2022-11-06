@@ -10,12 +10,12 @@ from cacke.models import Bulka
 
 
 class SearchForm(forms.Form):
-    nachinka = forms.ModelChoiceField(Bulka.objects.order_by().values_list('nachinka',flat=True).distinct(), required=False, label="Начинка")
-    testo = forms.ModelChoiceField(Bulka.objects.order_by().values_list('testo',flat=True).distinct(), required=False, label="Тесто")
-    price_l = forms.IntegerField(required=False,widget=forms.TextInput({'size':'5'}))
-    price_r = forms.IntegerField(required=False,widget=forms.TextInput({'size':'5'}))
-    name = forms.CharField(required=False, label="Название")
-    price_l.widget.attrs.update(size = '5')
+    nachinka = forms.ModelChoiceField(queryset=Bulka.objects.order_by().values_list('nachinka',flat=True).distinct(), required=False,widget=forms.Select(attrs={'class': 'whodtwo'}))
+    testo =    forms.ModelChoiceField(queryset=Bulka.objects.order_by().values_list('testo',flat=True).distinct(), required=False, widget=forms.Select(attrs={'class': 'whodtwo'}) )
+    price_l = forms.IntegerField(required=False,widget=forms.TextInput({'size':'8'}))
+    price_r = forms.IntegerField(required=False,widget=forms.TextInput({'size':'8'}))
+    name = forms.CharField(required=False, label="Название",)
+
     
     def get_price(self):
         dat = [self.data['price_l'],self.data['price_r']]

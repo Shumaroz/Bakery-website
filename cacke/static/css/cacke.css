@@ -14,7 +14,7 @@ html{
     }
 body{
     background: #FFF8EE;
-    padding: 10px;
+    
 }
 
 
@@ -37,14 +37,14 @@ h1{
 
 }
 h4{
-    width: 256px;
+    
     height: 25px;   
     left: 0px;
-    top: 20px;
+    top: 0px;
     font-family: 'Ubuntu';
     font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
+    
+    font-size: 35px;
     line-height: 139.69%;
 
     color: #512600;
@@ -80,14 +80,30 @@ p.name{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 7px;
+   
     gap: 40px;
 
 
     background: #FFF8EE;
     border-radius: 4px;
 }
-
+.whod input{
+    width:450px;
+    height: 100px;
+    border-radius:3px;
+    font-size: 20px;
+}
+.whodpric input{
+    height: 70px;
+    border-radius:3px;
+    font-size: 20px;
+}
+.whodtwo{
+    width:250px;
+    height: 70px;
+    border-radius:3px;
+    font-size: 20px;
+}
 input.but1{
     display: flex;
     flex-direction: row;
@@ -95,8 +111,9 @@ input.but1{
     align-items: center;
     padding: 10px 7px;
     gap: 10px;
-    
-    
+    height: 100px;
+    width: 200px;
+    font-size: 30px;
     color: #FFF8EE;
     background: #512600;
     border-radius: 4px;
@@ -113,7 +130,6 @@ p.testo{
 
     left: 120px;
     top: 70px;
-    
 
     background: #FFFFFF;
     border-radius: 4px;
@@ -126,7 +142,7 @@ p.nach_n{
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 20px;
     line-height: 139.69%;
 
     left: 16px;
@@ -141,7 +157,7 @@ p.testo_n{
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 20px;
     line-height: 139.69%;
     
     left: 120px;
@@ -149,11 +165,25 @@ p.testo_n{
     color: #512600;
 }
 p.pric{
-    
-    left: 223px;
-    top: 70px;
+    padding-left: 10px;
+    width: 160px;
     background: #FFF8EE;
-    border-radius: 4px;
+    font-size: 20px;
+
+}
+p.pric_n{
+    width: 53px;
+    height: 17px;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 139.69%;
+    padding-left: 30px;
+    left: 120px;
+    top: 55px;
+    color: #512600;
 
 }
 form{
@@ -162,5 +192,7 @@ form{
     border-radius: 4px;
     padding-right:100%;
 }
-
+td{
+    height: 25px;
+}
 

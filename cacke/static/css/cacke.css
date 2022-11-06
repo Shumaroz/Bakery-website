@@ -24,27 +24,41 @@ h1{
 
     font-family: 'Aguafina Script';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 14px;
     line-height: 139.69%;
  
+
+    
+
+    color: #512600;
+
+}
+h3{
+    width: 35px;
+    height: 20px;
+
+    font-family: 'Aguafina Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 139.69%;
+    /* identical to box height, or 20px */
 
     display: flex;
     align-items: center;
     letter-spacing: 0.07em;
 
     color: #512600;
-
 }
 h4{
     
     height: 25px;   
-    left: 0px;
-    top: 0px;
+    
     font-family: 'Ubuntu';
     font-style: normal;
     
-    font-size: 35px;
+    font-size: 45px;
     line-height: 139.69%;
 
     color: #512600;
@@ -142,7 +156,7 @@ p.nach_n{
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 139.69%;
 
     left: 16px;
@@ -157,7 +171,7 @@ p.testo_n{
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 139.69%;
     
     left: 120px;
@@ -166,9 +180,11 @@ p.testo_n{
 }
 p.pric{
     padding-left: 10px;
-    width: 160px;
-    background: #FFF8EE;
-    font-size: 20px;
+    width: 175px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    color: #512600;
+    font-size: 30px;
 
 }
 p.pric_n{
@@ -178,10 +194,10 @@ p.pric_n{
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 139.69%;
     padding-left: 30px;
-    left: 120px;
+    left: 140px;
     top: 55px;
     color: #512600;
 

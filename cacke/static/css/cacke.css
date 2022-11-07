@@ -12,9 +12,9 @@ html{
     -o-background-size: cover;
     background-size: cover;
     }
+
 body{
     background: #FFF8EE;
-    
 }
 
 
@@ -64,29 +64,23 @@ h4{
     color: #512600;
 }
 h2{
-    color: #512600;
-    padding-bottom: 17px;
-    margin-bottom: -2px;
-    border-bottom: 2px;
-    text-align: center;
-    font-family: "Arial Black";
+    width:124;
+    font-family: 'Ubuntu';
+    font-style: normal;
     font-size: 50px;
+    color: #512600;
    
     }
 h5{
     
-    width: 124px;
+    width:124;
     height: 25px;
     left: 0px;
-    top: 130;
 
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 139.69%;
-
-
+    font-size: 50px;
     color: #512600;
 }
 p.name{
@@ -105,18 +99,19 @@ p.name{
     width:450px;
     height: 100px;
     border-radius:3px;
-    font-size: 20px;
+    font-size: 40px;
 }
 .whodpric input{
-    height: 70px;
+    height: 60px;
+    width: 125px;
     border-radius:3px;
-    font-size: 20px;
+    font-size: 30px;
 }
 .whodtwo{
     width:250px;
     height: 70px;
     border-radius:3px;
-    font-size: 20px;
+    font-size: 30px;
 }
 input.but1{
     display: flex;
@@ -157,7 +152,7 @@ p.nach_n{
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 139.69%;
+   
 
     left: 16px;
     top: 55px;
@@ -172,7 +167,7 @@ p.testo_n{
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 139.69%;
+    
     
     left: 120px;
     top: 55px;
@@ -195,7 +190,7 @@ p.pric_n{
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 139.69%;
+   
     padding-left: 30px;
     left: 140px;
     top: 55px;
@@ -212,3 +207,37 @@ td{
     height: 25px;
 }
 
+.card {
+    background: #FFFFFF;
+    
+    display:inline-block;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:47%;
+}
+.imas{
+    padding-left: 10%    ;
+    width:200px; 
+    height:195px;
+}
+.cake{
+    background: #FFE4B7;
+    border-radius: 6px;
+    
+}
+
+p.cake_n{
+    font-family: 'Ubuntu';
+    font-style: normal;
+   
+    font-size: 25px;
+   
+    /* or 12px */
+
+    display: flex;
+    align-items: center;
+    background: #FFE4B7;
+    color: #512600;
+}

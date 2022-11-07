@@ -3,15 +3,18 @@
 
 {% block content %}
     {% for cac in cacke %}
-        <div class="cacke">
-            
+    
+        <div class="card">
+            <img class="imas" src= "{{ cac.imgs.url }}"   >
+            <div class="cake">
             <h2>{{ cac.name }}</h2>
-            <img src= "{{ cac.imgs.url }}" width="100" height="105">
-            <p>Начинка: {{ cac.nachinka|linebreaksbr }}</p>
-            <p>Тесто: {{ cac.testo|linebreaksbr }}</p>
-            <p>Цена: {{ cac.price|linebreaksbr }}</p>
-            
+            <p class="cake_n">Начинка: {{ cac.nachinka|linebreaksbr }}</p>
+            <p class="cake_n">Тесто: {{ cac.testo|linebreaksbr }}</p>
+            <p class="cake_n">Цена: {{ cac.price|linebreaksbr }}</p>
+            <p class="cake_n"></p>
+        </div>
             
         </div>
+    
     {% endfor %}
 {% endblock %}

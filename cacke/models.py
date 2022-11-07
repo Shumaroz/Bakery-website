@@ -6,7 +6,8 @@ from django.db import models
 
 
 class Bulka(models.Model):
-    name = models.TextField(primary_key = True)
+    id = models.BigIntegerField(primary_key=True)
+    name = models.TextField()
     nachinka = models.TextField(default = "simple")
     testo = models.TextField(default = "simple")
     price = models.IntegerField(default = 0)

@@ -12,8 +12,8 @@ from cacke.models import Bulka
 class SearchForm(forms.Form):
     nachinka = forms.ModelChoiceField(queryset=Bulka.objects.order_by().values_list('nachinka',flat=True).distinct(), required=False,widget=forms.Select(attrs={'class': 'whodtwo'}))
     testo =    forms.ModelChoiceField(queryset=Bulka.objects.order_by().values_list('testo',flat=True).distinct(), required=False, widget=forms.Select(attrs={'class': 'whodtwo'}) )
-    price_l = forms.IntegerField(required=False,widget=forms.TextInput({'size':'8'}))
-    price_r = forms.IntegerField(required=False,widget=forms.TextInput({'size':'8'}))
+    price_l = forms.IntegerField(required=False)
+    price_r = forms.IntegerField(required=False)
     name = forms.CharField(required=False, label="Название",)
 
     

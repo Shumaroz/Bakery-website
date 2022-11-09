@@ -13,7 +13,7 @@ class Bulka(models.Model):
     price = models.IntegerField(default = 0)
     text_ops = models.TextField()
     imgs = models.ImageField(default="/static/css/logo.png",upload_to="static/upload/")
-
+    names = models.TextField()
 
     def __str__(self):
         return self.name
